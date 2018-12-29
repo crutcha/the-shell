@@ -1106,6 +1106,17 @@ Copyright (c) 2012 Dan Eden
     animation-name: bounceInDown;
 }
 
+.icons {
+    font-size: 3.0rem;
+    color: #737c7f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icons:hover {
+    color: #d6120a;
+}
+
 /* ==========================================================================
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.

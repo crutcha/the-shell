@@ -442,6 +442,25 @@ button, input, select, textarea {
     letter-spacing: -1px;
 }
 
+.blog-title-after::after {
+  content: "";
+  /* Remove display: inline-block if not required to be on the same line as text etc */
+  display: inline-block;
+  background-color: #00d900;
+  width: .4em;
+  /* Set height to the line height of .text */
+  height: .8em;
+  /*
+  Animation paramaters:
+  blink = animation-name,
+  1s = animation-duration,
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
 .blog-description {
     margin: 0;
     font-size: 1.8rem;
@@ -1115,6 +1134,29 @@ Copyright (c) 2012 Dan Eden
 
 .icons:hover {
     color: #d6120a;
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
 }
 
 /* ==========================================================================
